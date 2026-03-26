@@ -1,3 +1,6 @@
 [submodule "perception/ros2_ws/src/crop_row_perception/agronav"]
 	path = perception/ros2_ws/src/crop_row_perception/agronav
 	url = https://github.com/StructuresComp/agronav.git
+[submodule "perception/data/raw/junfeng_croprow"]
+	path = perception/data/raw/junfeng_croprow
+	url = https://github.com/JunfengGaolab/CropRowDetection.git
