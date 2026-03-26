@@ -60,3 +60,5 @@ Thumbs.db
 # Logs
 *.log
 wget-log*
+*.zip
+perception/data/raw/vegann/
