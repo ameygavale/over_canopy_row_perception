@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Model weights (large binary files - track with Git LFS or keep local)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.bin
+
+# Dataset files (too large for git)
+perception/data/raw/agroscapes/*
+perception/data/raw/gd_yolov10/*
+perception/data/raw/amiga_field/*
+perception/data/sam_output/*
+perception/data/labels/*
+perception/data/visualizations/*
+
+# Keep directory structure
+!perception/data/raw/agroscapes/.gitkeep
+!perception/data/raw/gd_yolov10/.gitkeep
+!perception/data/raw/amiga_field/.gitkeep
+!perception/data/sam_output/.gitkeep
+!perception/data/labels/.gitkeep
+!perception/data/visualizations/.gitkeep
+!perception/checkpoints/sam2/.gitkeep
+!perception/checkpoints/yolov8/.gitkeep
+!perception/checkpoints/yolov10/.gitkeep
+!perception/checkpoints/mobilenetv3/.gitkeep
+
+# ROS2 build artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

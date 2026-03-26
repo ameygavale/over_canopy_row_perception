@@ -1,0 +1,23 @@
+crop_row_fusion:
+  ros__parameters:
+    # Model weights (absolute paths or relative to checkpoints/)
+    yolov8_weights:  ""   # fill in after downloading weights
+    yolov10_weights: ""   # fill in after downloading weights
+
+    # Default growth stage for stub classifier
+    # Options: corn_early, corn_mid, corn_late, corn_canopy,
+    #          soy_early, soy_mid, soy_late, soy_canopy
+    default_stage: "corn_mid"
+
+    # YOLO detection confidence threshold
+    conf_threshold: 0.25
+
+    # OAK-D Wide camera intrinsics (update after calibration)
+    fx: 400.0
+    fy: 400.0
+    cx: 640.0
+    cy: 360.0
+
+    # ROS2 topic names
+    rgb_topic:   "/oak/rgb/image_raw"
+    depth_topic: "/oak/stereo/image_raw"

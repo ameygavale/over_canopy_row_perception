@@ -1,0 +1,3 @@
+[submodule "perception/ros2_ws/src/crop_row_perception/agronav"]
+	path = perception/ros2_ws/src/crop_row_perception/agronav
+	url = https://github.com/StructuresComp/agronav.git
