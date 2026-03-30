@@ -1,0 +1,6 @@
+path: /home/agavale2/over_canopy_row_perception/perception/datasets/crop_row
+train: images/train
+val:   images/val
+
+nc: 1
+names: ['crop']
