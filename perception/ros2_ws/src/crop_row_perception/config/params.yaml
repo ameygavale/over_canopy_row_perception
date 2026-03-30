@@ -1,16 +1,14 @@
 crop_row_fusion:
   ros__parameters:
-    # Model weights (absolute paths or relative to checkpoints/)
-    yolov8_weights:  ""   # fill in after downloading weights
-    yolov10_weights: ""   # fill in after downloading weights
+    # Model weights
+    yolov8_weights:  "/home/agavale2/over_canopy_row_perception/perception/checkpoints/yolov8/yolov8n_crop_row_v1.pt"
+    yolov10_weights: ""   # not yet trained
 
     # Default growth stage for stub classifier
-    # Options: corn_early, corn_mid, corn_late, corn_canopy,
-    #          soy_early, soy_mid, soy_late, soy_canopy
     default_stage: "corn_mid"
 
     # YOLO detection confidence threshold
-    conf_threshold: 0.25
+    conf_threshold: 0.50   # raised from 0.25 to reduce over-detection
 
     # OAK-D Wide camera intrinsics (update after calibration)
     fx: 400.0
